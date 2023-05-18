@@ -5,7 +5,7 @@ import Layout from '../components/layout.js';
 export default function IndexPage() {
     return (
         <Layout>
-            <h1>Hello FMSHIT</h1>
+            <h1>Hello FEM</h1>
         </Layout>
     )
 }
