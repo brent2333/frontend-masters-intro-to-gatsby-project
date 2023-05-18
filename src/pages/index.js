@@ -1,9 +1,11 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout.js';
 
 export default function IndexPage() {
     return (
-        <main>
-            <h1>Hello FM</h1>
-        </main>
+        <Layout>
+            <h1>Hello FMSHIT</h1>
+        </Layout>
     )
 }
