@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout.js';
+import { StaticImage } from 'gatsby-plugin-image';
+import { imageWrapper } from '../styles/index.module.css';
 
 export default function IndexPage() {
     const data = useStaticQuery(graphql`
@@ -21,6 +23,15 @@ export default function IndexPage() {
     const posts = data.allMdx.nodes;
     return (
         <Layout>
+            <div className={imageWrapper}>
+                <StaticImage
+                    src="../images/ivana-la-61jg6zviI7I-unsplash.jpg"
+                    alt="corgi"
+                    placeholder="dominantColor"
+                    width={300}
+                    height={300}
+                    />
+            </div>
             <h1>Hello FEM</h1>
             <h2>recent posts</h2>
             <ul>
