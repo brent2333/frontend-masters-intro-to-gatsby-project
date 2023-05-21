@@ -3,6 +3,25 @@ date: 2023-05-17
 title: My second post
 description: again again
 ---
+
+import { graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
+export const query = graphql`
+query SmashQuery {
+  file(name: {eq: "smashburger"}) {
+    childImageSharp {
+      gatsbyImageData
+    }
+  }
+}
+`;
+
 # holy crap
+
+<GatsbyImage
+    image={getImage(props.data.file)}
+    alt="cocktail"
+/>
 
 what a post

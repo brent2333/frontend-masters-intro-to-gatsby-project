@@ -20,9 +20,9 @@ export default function AboutPage({ data }) {
 }
 
 // query is a keyword that gatsby uses at build time to pull the data
-export const pageQuery = graphql`
-query MyQuery {
-  file(name: {eq: "ivana-la-61jg6zviI7I-unsplash"}) {
+export const query = graphql`
+query cocktailQuery {
+  file(name: {eq: "cocktail"}) {
     childImageSharp {
       gatsbyImageData
     }
